@@ -1,0 +1,234 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ================= BACKGROUND ================= */
+body {
+  min-height: 100vh;
+  background: linear-gradient(
+    -45deg,
+    #6366f1,
+    #8b5cf6,
+    #22d3ee,
+    #6366f1
+  );
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: white;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ================= CONTAINERS ================= */
+.auth-container,
+.dashboard {
+  width: 90%;
+  max-width: 420px;
+  margin: 90px auto;
+  padding: 26px;
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(35px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ================= HEADINGS ================= */
+h2 {
+  text-align: center;
+  margin-bottom: 22px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* ================= INPUTS ================= */
+input {
+  width: 100px;
+  padding: 13px;
+  margin-bottom: 14px;
+  border:none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+/* ================= BUTTONS ================= */
+button {
+  width: 100%;
+  padding: 13px;
+  background: linear-gradient(135deg, #22d3ee, #38bdf8);
+  border: none;
+  border-radius: 10px;
+  color: #020617;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(34, 211, 238, 0.4);
+}
+
+/* ================= ERROR ================= */
+.error {
+  color: #ffe4e6;
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+/* ================= TODO FORM ================= */
+.todo-form {
+  margin-bottom: 22px;
+}
+
+.todo-form form {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-form input {
+  flex: 1;
+}
+
+/* ================= TABLE ================= */
+.todo-table-wrapper {
+  overflow-x: auto;
+}
+
+.todo-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.todo-table th {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.todo-table td {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.todo-row {
+  transition: all 0.3s ease;
+}
+
+.todo-row:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: scale(1.01);
+}
+
+/* ================= STATUS BADGES ================= */
+.status {
+  padding: 5px 14px;
+  border-radius: 14px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.status.done {
+  background: #22c55e;
+  color: #052e16;
+}
+
+.status.pending {
+  background: #fde047;
+  color: #422006;
+}
+
+/* ================= ICON BUTTONS ================= */
+.icon-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 17px;
+  margin: 0 5px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.icon-btn:hover {
+  transform: scale(1.25);
+  color: #22d3ee;
+}
+
+.icon-btn.danger:hover {
+  color: #fb7185;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+/* NAV LINKS */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 14px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #38bdf8;
+}
+
+/* LOGOUT */
+.logout-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+  transform: scale(1.08);
+}
