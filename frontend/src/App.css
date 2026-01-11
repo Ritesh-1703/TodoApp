@@ -30,7 +30,7 @@ body {
 /* ================= CONTAINERS ================= */
 .auth-container,
 .dashboard {
-  width: 300%;
+  width: 100%;
   margin: 90px auto;
   padding: 26px;
   background: rgba(255, 255, 255, 0.18);
@@ -142,7 +142,7 @@ button:hover {
   border-radius: 14px;
   font-size: 11px;
   font-weight: bold;
-  margin: auto;
+  align-self: center;
 }
 
 .status.done {
@@ -242,5 +242,5 @@ button:hover {
   font-weight: 500;
   display: inline-block;
   text-align: center;
-  margin: auto;
+  align-self: center;
 }
