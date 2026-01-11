@@ -71,9 +71,9 @@ button {
   padding: 5px;
   background: linear-gradient(135deg, #22d3ee, #38bdf8);
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   color: #020617;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -111,7 +111,7 @@ button:hover {
 }
 
 .todo-table {
-  width: 90%;
+  width: 95%;
   border-collapse: collapse;
 }
 
@@ -119,12 +119,13 @@ button:hover {
   background: rgba(255, 255, 255, 0.25);
   padding: 10px;
   border-radius: 8px;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .todo-table td {
   padding: 10px;
-  font-size: 14px;
+  font-size: 15px;
+  text-align: center;
 }
 
 .todo-row {
