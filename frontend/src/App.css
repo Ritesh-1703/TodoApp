@@ -232,3 +232,13 @@ button:hover {
   background: #dc2626;
   transform: scale(1.08);
 }
+
+.todo-date {
+  padding: 4px 10px;
+  background-color: #eef2ff;
+  color: #3730a3;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: inline-block;
+}

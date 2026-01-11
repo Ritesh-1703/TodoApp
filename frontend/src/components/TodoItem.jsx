@@ -12,7 +12,11 @@ const TodoItem = ({ todo, index, fetchTodos }) => {
     await api.delete(`/todos/${todo._id}`);
     fetchTodos();
   };
-
+  const formatDate = new Date(todo.date).toLocaleDateString("en_IN", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+  });
   return (
     <tr className="todo-row">
       <td>{index + 1}</td>
@@ -23,12 +27,14 @@ const TodoItem = ({ todo, index, fetchTodos }) => {
           {todo.completed ? "Done" : "Pending"}
         </span>
       </td>
-
+      <td className="todo-date">{formatDate}</td>
       <td>
         <button className="icon-btn" onClick={toggleComplete}>
           {todo.completed ? "↩" : "✓"}
         </button>
+      </td>
 
+      <td>
         <button className="icon-btn danger" onClick={deleteTodo}>
           🗑
         </button>
