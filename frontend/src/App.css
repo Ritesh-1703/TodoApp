@@ -56,7 +56,7 @@ h2 {
 
 /* ================= INPUTS ================= */
 input {
-  width: 100px;
+  width: 150px;
   padding: 13px;
   margin-bottom: 14px;
   border:none;
@@ -112,7 +112,7 @@ button:hover {
 }
 
 .todo-table {
-  width: 100%;
+  width: 200%;
   border-collapse: collapse;
 }
 
@@ -168,7 +168,7 @@ button:hover {
 
 .icon-btn:hover {
   transform: scale(1.25);
-  color: #22d3ee;
+  color: #11be13;
 }
 
 .icon-btn.danger:hover {
@@ -236,7 +236,7 @@ button:hover {
 .todo-date {
   padding: 4px 10px;
   background-color: #eef2ff;
-  color: #3730a3;
+  color: #040504dc;
   border-radius: 12px;
   font-size: 0.85rem;
   font-weight: 500;
