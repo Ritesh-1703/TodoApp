@@ -30,7 +30,7 @@ body {
 /* ================= CONTAINERS ================= */
 .auth-container,
 .dashboard {
-  width: 150%;
+  width: 250%;
   max-width: 420px;
   margin: 90px auto;
   padding: 26px;
@@ -56,7 +56,7 @@ h2 {
 
 /* ================= INPUTS ================= */
 input {
-  width: 150px;
+  width: 120px;
   padding: 13px;
   margin-bottom: 14px;
   border:none;
@@ -68,7 +68,7 @@ input {
 
 /* ================= BUTTONS ================= */
 button {
-  width: 80%;
+  width: 100%;
   padding: 13px;
   background: linear-gradient(135deg, #22d3ee, #38bdf8);
   border: none;
@@ -234,7 +234,7 @@ button:hover {
 }
 
 .todo-date {
-  padding: 4px 10px;
+  padding: 5px 14px;
   background-color: #eef2ff;
   color: #040504dc;
   border-radius: 12px;
