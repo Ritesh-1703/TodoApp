@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { applyTimestamps } = require("./User");
+
 
 const todoSchema = mongoose.Schema({
     user: {

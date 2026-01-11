@@ -23,9 +23,10 @@ const Dashboard = () => {
     e.preventDefault();
     if (!title) return;
 
-    const res = await api.post("/todos", { title });
+    const res = await api.post("/todos", { title, date });
     setTodos([res.data, ...todos]);
     setTitle("");
+    setDate("");
   };
 
   return (

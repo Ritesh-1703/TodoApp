@@ -7,13 +7,13 @@ exports.getTodos = async (req, res) => {
 
 exports.createTodo = async (req, res) => {
     if (!req.body.title) {
-        return res.status(400).json({ message: "Title is requried" });
+        return res.status(400).json({ message: "Title and Date is requried" });
     }
 
     const todo = await Todo.create({
         user: req.user,
         title: req.body.title,
-        date
+        date: req.body.date
     });
 
     res.json(todo);
@@ -25,7 +25,7 @@ exports.updateTodo = async (req, res) => {
     if (!todo) {
         res.status(404).json({ message: "Todo not found" });
     }
-    if (todo.user.toString() !== req.user) {
+    if (todo.user.toString() !== req.user.id) {
         return res.status(401).json({ message: "Not authorized" });
     }
 

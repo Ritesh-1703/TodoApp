@@ -12,11 +12,13 @@ const TodoItem = ({ todo, index, fetchTodos }) => {
     await api.delete(`/todos/${todo._id}`);
     fetchTodos();
   };
-  const formatDate = new Date(todo.date).toLocaleDateString("en_IN", {
-    day: "2-digit",
-    month: "short",
-    year: "numeric",
-  });
+  const formatDate = todo.date
+    ? new Date(todo.date).toLocaleDateString("en-IN", {
+        day: "2-digit",
+        month: "short",
+        year: "numeric",
+      })
+    : "No Date";
   return (
     <tr className="todo-row">
       <td>{index + 1}</td>
