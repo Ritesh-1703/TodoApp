@@ -5,7 +5,7 @@ import TodoItem from "../components/TodoItem";
 const Dashboard = () => {
   const [todos, setTodos] = useState([]);
   const [title, setTitle] = useState("");
-
+  const [date, setDate] = useState("");
   const fetchTodos = async () => {
     try {
       const res = await api.get("/todos");
@@ -40,6 +40,14 @@ const Dashboard = () => {
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
+
+          <input
+            type="date"
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+            required
+          />
+
           <button>Add</button>
         </form>
       </div>
@@ -50,6 +58,7 @@ const Dashboard = () => {
             <tr>
               <th>#</th>
               <th>Task</th>
+              <th>Date</th>
               <th>Status</th>
               <th>Actions</th>
             </tr>

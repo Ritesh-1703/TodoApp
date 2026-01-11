@@ -12,7 +12,8 @@ exports.createTodo = async (req, res) => {
 
     const todo = await Todo.create({
         user: req.user,
-        title: req.body.title
+        title: req.body.title,
+        date
     });
 
     res.json(todo);

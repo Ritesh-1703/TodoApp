@@ -8,7 +8,7 @@ const todoSchema = mongoose.Schema({
         ref: "User"
     },
     title: { type: String, required: true },
-    completed: { type: Boolean, default: Fasle },
+    completed: { type: Boolean, default: false },
     date: { type: Date, required: true }
 },
     { timestamps: true });
