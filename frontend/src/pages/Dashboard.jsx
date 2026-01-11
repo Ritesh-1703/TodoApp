@@ -58,9 +58,10 @@ const Dashboard = () => {
             <tr>
               <th>#</th>
               <th>Task</th>
-              <th>Date</th>
               <th>Status</th>
-              <th>Actions</th>
+              <th>Date</th>
+              <th>Update</th>
+              <th>Delete</th>
             </tr>
           </thead>
           <tbody>
