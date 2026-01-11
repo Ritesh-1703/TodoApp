@@ -25,7 +25,7 @@ exports.updateTodo = async (req, res) => {
     if (!todo) {
         res.status(404).json({ message: "Todo not found" });
     }
-    if (todo.user.toString() !== req.user.id) {
+    if (todo.user.toString() !== req.user) {
         return res.status(401).json({ message: "Not authorized" });
     }
 
