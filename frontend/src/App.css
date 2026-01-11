@@ -61,7 +61,7 @@ input {
   border:none;
   border-radius: 10px;
   outline: none;
-  font-size: 15px;
+  font-size: 18px;
   background: rgba(255, 255, 255, 0.85);
 }
 
@@ -71,9 +71,9 @@ button {
   padding: 5px;
   background: linear-gradient(135deg, #22d3ee, #38bdf8);
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   color: #020617;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -111,7 +111,7 @@ button:hover {
 }
 
 .todo-table {
-  width: 100%;
+  width: 90%;
   border-collapse: collapse;
 }
 
