@@ -30,7 +30,7 @@ body {
 /* ================= CONTAINERS ================= */
 .auth-container,
 .dashboard {
-  width: 90%;
+  width: 150%;
   max-width: 420px;
   margin: 90px auto;
   padding: 26px;
@@ -68,7 +68,7 @@ input {
 
 /* ================= BUTTONS ================= */
 button {
-  width: 100%;
+  width: 80%;
   padding: 13px;
   background: linear-gradient(135deg, #22d3ee, #38bdf8);
   border: none;
@@ -120,7 +120,7 @@ button:hover {
   background: rgba(255, 255, 255, 0.25);
   padding: 10px;
   border-radius: 8px;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .todo-table td {
@@ -241,4 +241,5 @@ button:hover {
   font-size: 0.85rem;
   font-weight: 500;
   display: inline-block;
+  text-align: center;
 }
